@@ -9,16 +9,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/springcloudlynn/springcloudinactivity #配置git仓库地址
+          uri: http://10.24.12.27/zhoujian/springcloudinactivity.git #配置git仓库地址
           searchPaths: repo #配置仓库路径
-          username: springcloudlynn #访问git仓库的用户名
-          password: ly123456 #访问git仓库的用户密码
+          username: zhoujian #访问git仓库的用户名
+          password: a1111111 #访问git仓库的用户密码
       label: master #配置仓库的分支
   rabbitmq:
-    host: 127.0.0.1
+    host: 10.24.12.15
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
     virtualHost: /
     publisherConfirms: true
 eureka:

@@ -1,7 +1,7 @@
 spring:
-  cloud:
+   cloud:
     config:
-      name: index,feign,database,redis,key
+      name: index,feign,database,redis,key,mq
       label: master
       discovery:
         enabled: true

@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>news</artifactId>
-        <groupId>com.lynn</groupId>
+        <artifactId>rdl</artifactId>
+        <groupId>com.sumancloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,9 +13,9 @@
     <description>客户端</description>
     <modules>
         <module>index</module>
-        <module>article</module>
-        <module>comment</module>
-        <module>user</module>
+        <module>mp</module>
+        <module>comobject</module>
+        <module>kuaidi</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -28,10 +28,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -52,7 +49,7 @@
             <version>${druid.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.lynn</groupId>
+            <groupId>com.sumancloud</groupId>
             <artifactId>common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -64,5 +61,20 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+
     </dependencies>
 </project>
